@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+body{
+    background:#444;
+    font-size:15px;
+}
+.Logo{
+    color: #fff;
+    font-size:1.5em;
+    padding-left: 10px;
+    padding-top: 10px;
+ text-transform: uppercase;
+ font-family: 'Rajdhani', sans-serif;
+ font-family: 'Rowdies', cursive;
+}
+nav{
+    background-color:rgb(9, 154, 162);
+    height:8vh;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    float:right;
+    
+    
+}
+nav ul li{
+   position: relative;
+   bottom:20px;
+    padding-right: 15px;
+    list-style: none;
+    
+}
+nav ul li a{
+    
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#fff;
+   
+}
+nav ul li a.active,nav ul li a:hover{
+    background-color: rgb(1, 176, 245);
+    border-radius: 10px;
+    transition: 1.3s;
+}
+
+@media only screen and (min-width:1200px){ /* XL */
+
+       .Logo{
+
+                       font-size:1.5em;
+
+       }
+       nav ul li a{
+        font-size: 1.3em;
+       }
+      
+
+}
+
+@media only screen and (min-width:992px) and (max-width:1199px){ /* L */
+
+    .Logo{
+
+                       font-size:1.4em;
+
+       }
+       nav ul li a{
+        font-size: 1.4em;
+       }
+       #About img {height: 15vh;
+       width:30%;border-radius: 110px;}
+       #About p {font-size:10px;}
+       .pngs p{font-size:10px;}
+       
+}
+
+@media only screen and (min-width:768px) and (max-width:991px){ /* M */
+
+    .Logo{
+
+                       font-size:1.3em;
+
+       }
+       nav ul li a{
+        font-size: 1.3em;
+       }
+       #About img {height: 11vh;
+        width:25%;border-radius: 120px;}
+        #About p{font-size:8px;}
+        .pngs p{font-size:8px; letter-spacing: 1px;}
+}
+
+@media only screen and (min-width:576px) and (max-width:767px){ /* S */
+
+       .Logo{
+
+                       font-size:1.2em;
+
+       } nav ul li a{
+        font-size: 1.2em;
+       }
+
+       #About img {height: 8vh;
+        width:20%;border-radius: 130px;}
+        #About p{font-size:6px;}
+        .pngs p{font-size:6px; letter-spacing: 1px;}
+}
+
+@media only screen and (min-width:340px) and (max-width:575px){ /* XS */
+
+       .Logo{
+
+                       font-size:1.1em; 
+
+       }
+       nav ul li a{
+        font-size: 0.9em;
+       }
+       #About img {height: 5vh;
+        width:15%;border-radius: 150px;}
+        #About p{font-size:4px;}
+        .pngs p{font-size:4px; letter-spacing: 1px;}
+}
+@media only screen and (min-width:250px) and (max-width:339px){ /* XS */
+
+    .Logo{
+
+                    font-size:0.8em;
+
+    }
+    nav ul li a{
+     font-size: 0.9em;
+    }
+    #About img {height: 5vh;
+        width:10%;border-radius: 200px;}
+    #About p
+    {
+        font-size:2px;
+    }
+    .pngs p{font-size:2px; letter-spacing: 1px;}
+        
+    
+}
+
+#Home{
+    height:96vh;
+    background-color:rgb(2, 2, 47);
+    width:100%;
+    
+}
+
+.Icon i{
+  
+    padding-left:50%;
+    font-size:1.5em;
+    color:white;
+    animation-name: Homepageyanardöner;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+   
+}
+
+#Home img{
+    height: calc(96vh - 1.5em);
+    width: 100%;
+}
+@keyframes Homepageyanardöner{
+    0%{color:white;}
+    25%{color:blanchedalmond;}
+    50%{color:cyan;}
+    75%{color:crimson;}
+    100%{color:darkmagenta;}
+}
+#About{
+    height: 64vh;
+    background-color: black;
+    border:2px solid darkblue;
+}
+.Iconabout i {
+    padding-left: 50%;
+    font-size:1.5em;
+    padding-bottom: 30px;
+    color:rgb(192, 66, 122);
+    
+}
+#About img {
+    max-width: 100%;
+    height: auto;
+    padding-top: 10px;
+    float: left;
+    height: 37vh;
+    border:2px solid palevioletred;
+    border-radius: 50%;
+  }
+ 
+  
+#About p{
+    column-count: 3;
+    column-gap: 10px;
+    column-rule: 2px;
+    column-width: 2px;
+    column-rule-color: aquamarine;
+    column-rule-style: groove;
+    padding-top:10px;
+    font-size:10px;
+    color:rgb(192, 66, 122);
+    font-family:Rajdhani;
+    float:top;
+}
+#insta{font-size:1.8em;padding-left:70%;cursor: pointer;}
+#Project{
+    width:100%;
+    height: 80vh;
+    background-color: #fff;
+    
+}
+.title{
+    font-size:1.5em;
+    text-align: center;
+    font-family:Rajdhani;
+    text-transform: uppercase;
+    color:rgba(31, 137, 7, 0.718);
+    
+   
+}
+.pngs img{
+
+    height: 32vh;
+    width:32%;
+    border:2px solid cyan;
+    border-radius: 50px;
+    margin-top:1%;
+    margin-left:35%;
+  
+
+}
+.pngs img:hover{
+  
+    zoom: 1.2;
+    opacity: 0.6;
+    cursor: pointer;
+}
+.pngs p{
+    font-family: Rahdji;
+    font-size:10px;
+    column-count: 3;
+    column-gap:5px;
+    color:black;
+    letter-spacing: 3px;
+    
+     
+}
